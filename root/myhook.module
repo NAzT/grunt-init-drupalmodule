@@ -1,0 +1,18 @@
+<?php
+/*
+ * Implements hook_menu().
+ */
+function {%= name %}_menu() {
+  $items = array();
+{% if (has_admin) { %}
+  $items['admin/config/development/{%= name %}'] = array(
+    'title' => '{%= name %} Administration',
+    'page callback' => '{%= name %}_admin',
+    'file' => '{%= name %}.inc',
+    'access arguments' => array('administer content'),
+  );
+{% } %}
+  return $items;
+}
+
+

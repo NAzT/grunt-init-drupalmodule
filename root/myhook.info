@@ -1,0 +1,6 @@
+; $Id: {%= name %}.info,v 1.2 2010/08/23 05:01:59 ufku Exp $
+name = "{%= name %}"
+description = "{%= description %}"
+package = "{%= package %}"
+version = "{%= module_version %}"
+core = "{%= drupal_core_version %}"

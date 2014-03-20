@@ -1,0 +1,5 @@
+{
+  "myhook.module": "{%= name %}.module",
+  "myhook.info": "{%= name %}.info",
+  "myhook.inc": "{%= name %}.inc"
+}
